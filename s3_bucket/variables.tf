@@ -1,11 +1,11 @@
 variable "environment" {
   type    = "string"
-  default = "test"
+  default = "deployment"
 }
 
 variable "s3_bucket_prefix" {
   #default = "my-tf-test-bucket-sam87"
-  description = "prefix of s3 bucket"
+  description = "prefix bucket"
   type        = "string"
 }
 
