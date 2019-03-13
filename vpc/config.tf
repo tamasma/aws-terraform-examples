@@ -8,7 +8,10 @@ terraform {
   backend "s3"{
     bucket = "sam-terraform-test-eu-west-1"
     key = "test/vpc"
+
     region = "eu-west-1"
-    # encrypt = "true"
+    encrypt = "true"
+    profile = "dev"
+    dynamodb_table = "terraform-lock"
   }
 }
